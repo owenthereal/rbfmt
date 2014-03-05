@@ -1,6 +1,7 @@
-# Rbfmt
+# rbfmt
 
-TODO: Write a gem description
+`rbfmt`, like [`gofmt`](http://golang.org/cmd/go/#hdr-Run_gofmt_on_package_sources) in the Go programming language, formats your Ruby code.
+`rbfmt` is in beta. Use it at your own risk.
 
 ## Installation
 
@@ -18,7 +19,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+$ rbfmt # format all folders recursively
+$ rbfmt folder # format "folder" recursively
+```
 
 ## Contributing
 
