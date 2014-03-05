@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rbfmt::VERSION
   spec.authors       = ["Jingwen Owen Ou"]
   spec.email         = ["jingweno@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Format your Ruby code.}
+  spec.homepage      = "https://github.com/jingweno/rbfmt"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
