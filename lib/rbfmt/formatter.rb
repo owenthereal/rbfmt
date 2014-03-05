@@ -1,15 +1,18 @@
-require "ripper"
-require "sorcerer"
+require "ruby2ruby"
+require "ruby_parser"
 
 module Rbfmt
   class Formatter
-    def initialize(source)
-      @source = source
+    def initialize(ruby)
+      @ruby = ruby
     end
 
     def format
-      sexp = Ripper::SexpBuilder.new(@source).parse
-      Sorcerer.source(sexp, :indent => true)
+      parser    = RubyParser.new
+      ruby2ruby = Ruby2Ruby.new
+      sexp      = parser.process(@ruby)
+
+      ruby2ruby.process(sexp)
     end
   end
 end
